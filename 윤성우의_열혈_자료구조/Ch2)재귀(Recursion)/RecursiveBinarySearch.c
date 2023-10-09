@@ -3,11 +3,11 @@
 int BSearchRecur(int ar[], int first, int last, int target){
     int mid;
     if(first > last)
-        return -1;        // -1의 반환은 탐색의 실패를 의미
-    mid = (first+last)/2;        // 탐색대상의 중앙을 찾는다.
+        return -1;      // -1의 반환은 탐색의 실패를 의미
+    mid = (first+last)/2;       // 탐색대상의 중앙을 찾는다.
     
     if(ar[mid] == target)
-        return mid;        // 탐색된 타겟의 인덱스 값 반환
+        return mid;     // 탐색된 타겟의 인덱스 값 반환
     else if(target < ar[mid])
         return BSearchRecur(ar, first, mid-1, target);
     else
