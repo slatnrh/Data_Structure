@@ -21,7 +21,7 @@ int BSearch(int ar[], int len, int target){
         }
     }
     return -1;      // 찾지 못했을 때 반환되는 값 -1
-}
+}ㄴ
 
 int main(){
     int arr[] = {1, 3, 5, 7, 9};
